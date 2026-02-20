@@ -11,6 +11,10 @@ snippets:
       title: Explain Pull Request
       type: command
       target: [claude]
+    - path: skills/blah.md
+      title: Blah
+      type: skill
+      target: [claude]
 profiles:
     - name: default
       description: Base profile with essential snippets
