@@ -6,7 +6,8 @@ snippets:
       target: [claude]
       description: Your first Unison snippet
       tags: [getting-started, example]
-    - path: rules/unison-agent.md
+    - source: unison-ai/defaults
+      path: rules/unison-agent.md
     - path: commands/explain-pull-request.md
       title: Explain Pull Request
       type: command
