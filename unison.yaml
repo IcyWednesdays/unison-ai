@@ -6,15 +6,10 @@ snippets:
       target: [claude]
       description: Your first Unison snippet
       tags: [getting-started, example]
-    - source: unison-ai/defaults
-      path: rules/unison-agent.md
+    - path: rules/unison-agent.md
     - path: commands/explain-pull-request.md
       title: Explain Pull Request
       type: command
-      target: [claude]
-    - path: skills/blah.md
-      title: Blah
-      type: skill
       target: [claude]
 profiles:
     - name: default
