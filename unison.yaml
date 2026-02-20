@@ -1,0 +1,18 @@
+base: "default"
+
+snippets:
+  - path: "rules/hello-from-unison.md"
+    title: "Hello from Unison"
+    type: "rule"
+    target: ["claude"]
+    description: "Your first Unison snippet"
+    tags: ["getting-started", "example"]
+  - source: "unison-ai/defaults"
+    path: "rules/unison-agent.md"
+
+profiles:
+  - name: "default"
+    description: "Base profile with essential snippets"
+    snippets:
+      - "rules/hello-from-unison.md"
+      - "unison-ai/defaults:rules/unison-agent.md"
