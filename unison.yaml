@@ -1,0 +1,27 @@
+base: "default"
+
+snippets:
+  - path: "rules/hello-from-unison.md"
+    title: "Hello from Unison"
+    type: "rule"
+    target: ["claude"]
+    description: "Your first Unison snippet"
+    tags: ["getting-started", "example"]
+  - source: "unison-ai/defaults"
+    path: "rules/unison-agent.md"
+  - source: "unison-ai/defaults"
+    path: "skills/discover.md"
+  - source: "unison-ai/defaults"
+    path: "rules/discover-hint.md"
+
+profiles:
+  - name: "default"
+    description: "Base profile with essential snippets"
+    snippets:
+      - "unison-ai/defaults:rules/unison-agent.md"
+      - "unison-ai/defaults:skills/discover.md"
+      - "unison-ai/defaults:rules/discover-hint.md"
+  - name: "welcome"
+    description: "Welcome profile for onboarding"
+    snippets:
+      - "rules/hello-from-unison.md"
